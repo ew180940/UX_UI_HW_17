@@ -4,55 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="style.css">
-<head>
-<style>
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #ffffff;
-}
-
-li {
-  float: right;
-}
-
-li a {
-  display: block;
-  color: rgb(0, 0, 0);
-  text-align: center;
-  padding: 16px;
-  text-decoration: none;
-}
-
-li a:hover {
-  background-color: #4C6D4C;
-  color:#ffffff
-}
-</style>
-</head>
 <body>
     </head>
     <body>
-        <div class="inline-block logo"><img src="../images/logo.PNG"></div>
-        <nav class="inline-block">
             <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'></nav>
 <style>
 body {
     font-family: 'Comfortaa';font-size: 22px;
 }
 </style>
-            <ul>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#work">Work</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#about">About</a></li>
-              </ul>
+<!--Navigation-->
+<header class="navbar-brand">
+  <div class="logo-image">
+      <img src="../UX_UI_HW_17/images/logo1.png" class="inline-block" width="25%" height="25%">
+      <nav class="inline-block">
+          <ul>
+              <li><a href="#contact">Contact</a></li>
+              <li><a href="#work">Work</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#about">About</a></li>
+          </ul>
         </nav>
+<!--Hero-->
          <h1>Welcome to my page!</h1>
-        <img><img src="/images/me.png "></img>
-        <div class="hero-image">  <div class="flex-container">
+         <div class="hero-image">
+              <img src="../UX_UI_HW_17/images/me.png " 
+              width="25%" 
+              height="25%" />
+            </div>
+          <div class="flex-container">
             <div><div class="hero-text">
                 <p>I’m Emily.
                 <br>
@@ -62,14 +42,71 @@ body {
                 <button>Resume</button>
               </div></div>
           </div> </div>
-          <section><div class="skills"><h2 style="background-color:rgba(76, 109, 76, 0.6);">My Skills</h2><p>Research: <br>
-            User Interviews, Usability Testing, Journey Mapping, Storyboarding, User Personas, Affinity Diagrams, Information Architecture
-        <br> <br>Design: <br> Wireframing, Prototyping, Design Systems, Visual Design, Interaction Design, Illustration
-        <br> <br>Tools: <br> Adobe Illustrator, Adobe Photoshop, Figma, Procreate, Salesforce, Jira, Trello, Mirosoft Excel, Power BI, HTML/CSS, VS Studio Code, GitHub
-    </p></div> </section>
-          <div class="footer">
-            <ul><li class="inline-block">Contact</li><li class="inline-block">Work</li><li class="inline-block">Skills</li><li class="inline-block">About</li></ul>
+          
+<!-- Skills -->
+<div class="flex-container" id="Skills" style="margin-top:50px; margin-bottom:50px"><h2>My Skills</h2></div>
+  <div class="row-padding">
+    <div class="margin-bottom">
+      <div class="skills">
+        <img src="../UX_UI_HW_17/images/userpersonaupdated.png" class="grow" alt="Research" style="width:80%">
+        <div class="flex-container">
+          <h3>Research</h3>
+          <p class="skill-text">User Interviews, Usability Testing, Journey Mapping, Storyboarding, User Personas, Affinity Diagrams, Information Architecture</p>
         </div>
-    </body>
+      </div>
+    </div>
+    <div class="margin-bottom">
+      <div class="skills">
+        <img src="../UX_UI_HW_17/images/DESKTOP.gif" class="grow" alt="Design" style="width:100%">
+        <div class="flex-container">
+          <h3>Design</h3>
+          <p class="skill-text">Wireframing, Prototyping, Design Systems, Visual Design, Interaction Design, Illustration</p>
+        </div>
+      </div>
+    </div>
+    <div class="margin-bottom">
+      <div class="skills">
+        <img src="../UX_UI_HW_17/images/storyboard.png" class="grow" alt="Tools" style="width:80%">
+        <div class="flex-container">
+          <h3>Tools</h3>
+          <p class="skill-text">Adobe Illustrator, Adobe Photoshop, Figma, Procreate, Salesforce, Jira, Trello, Mirosoft Excel, Power BI, HTML/CSS, VS Studio Code, GitHub</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  <body>
+    <div class="footer-basic">
+        <footer>
+<div class="container">
+	<div class="wrapper">
+		<div class="box a"> <ul class="list-inline">
+                <li class="list-inline-item"><a href="#">About</a></li>
+                <li class="list-inline-item"><a href="#">My Work</a></li>
+                <li class="list-inline-item"><a href="#">Skills</a></li>
+                <li class="list-inline-item"><a href="#">Contact</a></li>
+            </ul></div>
+           	<div class="box b"><p class="copyright">Emily Wade © 2023</p></div>
+	</div>
+					</div>       
+        </footer>
+    </div>
+</body>
+<!--Footer
+<body>
+    <div class="footer-basic">
+        <footer>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="#">About</a></li>
+                <li class="list-inline-item"><a href="#">My Work</a></li>
+                <li class="list-inline-item"><a href="#">Skills</a></li>
+                <li class="list-inline-item"><a href="#">Contact</a></li>
+            </ul>
+            <p class="copyright">Emily Wade © 2023</p>
+        </footer>
+    </div>
+  -->
+</body>
 
 </html>

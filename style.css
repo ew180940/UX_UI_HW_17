@@ -4,50 +4,95 @@ html, body {
   max-width: 1044px;
 }
 
+.inline-block{
+    display: inline-flex;
+}
+
 .footer ul {
+  font-family: 'Comfortaa';
   list-style-type: none;
-  font-family: Comfortaa;
   padding: 30px;
   overflow: hidden;
   background-color: #4C6D4C;
 
 }
+footer {background-color:rgba(76, 109, 76, 0.6)
+}
+.copyright {bottom: 100px; font-size: 14px;}
+ul {
+  font-size: 30px;
+  list-style-type: none;
+  margin: 10px;
+  padding: 10px;
+  overflow: hidden;
+}
 
+li {
+  float: right;
+}
+
+li a {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #4C6D4C;
+  color:#ffffff
+}
 ul #style {
     list-style-type: none;
     margin: 0;
-    font-family: Comfortaa;
-    padding: 50px;
+    font-family: 'Comfortaa';
+    padding: 10px;
     overflow: hidden;
-    background-color: #ffffff;
   }
   
   li {
     float: right;
+    font-style: bold;
   }
   
   li #about {
-    display: block;
+
     color: rgb(0, 0, 0);
     text-align: center;
     padding: 16px;
-    font-family: Comfortaa;
+    font-family: 'Comfortaa';
     text-decoration: none;
   }
   
   li a:hover {
     background-color: #4C6D4C;
   }
+  .wrapper {
+    display: grid;
+    grid-template-columns: 75% 25%;	
+  }
   body {
-      background-image: url("../images/leaf1.png");
-      background-repeat: repeat-x repeat-y;
+      background-image: url("../UX_UI_HW_17/images/leaf1.png");
+      background-repeat: repeat;
+      background-position: 0px -10px;
     }
 
-    img {
-        width: 20%;
-        height: auto;
-        left: 12%;
-      }
+    .logo-image{
+      border-radius: 50%;
+      margin-top: -6px;
+      padding: 1px;
+  }
+  h1 {position: relative;
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 56px;
+    left: 30%;
+    bottom: 70%;
+    letter-spacing: 0.05em;
+    
+    color: #4C6D4C;}
 
 button {position: absolute;
     width: 261px;
@@ -68,34 +113,18 @@ button:hover {
 
 .hero-text {background-color: #ffffff;box-sizing: border-box;
 
-    position: absolute;
+    position: relative;
     width: 768px;
     height: 390px;
-    top: 315px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    left: 30%}
+    bottom: 700px;
+    padding: 10px;
+    left: 30%;
+    align-content: center}
 
     .hero-text p {text-align:center;
       letter-spacing: 0.05em;
     margin: 15px;
   font-size: 30px}
-
-h1 {position: relative;
-    font-family: 'Comfortaa';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 50px;
-    line-height: 56px;
-    left: 30%;
-    bottom: -60px;
-    /* identical to box height */
-    
-    letter-spacing: 0.05em;
-    
-    color: #4C6D4C;}
-img {position: absolute;
-
-    }
 
  h2 {
         background: rgba(76, 109, 76, 0.6);
@@ -103,13 +132,11 @@ img {position: absolute;
         font-size: 50px;
         border-radius: 33px;
         width: 1100px;
-        box-align: center;
         margin: 16px;
         padding: 16px;
         position: relative;
         left: 4%;
-    text-align: center;
-    bottom: -650px
+        text-align: center;
 }
         .footer {
             display: flex;
@@ -123,10 +150,24 @@ img {position: absolute;
           }
           .footer a {
             padding: 20px 40px;
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: 'Comfortaa';
             text-decoration: none;
           }
 
- .skills p {align-items: center; position: relative; text-align: center; bottom: -650px}         
+.grow  {
+ transition: all .2s ease-in-out; 
+}
+            
+.grow:hover { 
+transform: scale(1.1); 
+ }
 
- 
+ .skills p {align-items: center; position: relative; text-align: left; grid-template-columns:33% 33% 33%}         
+
+
+.row-padding {display: flex; flex-direction: row; justify-content: center}
+.flex-container {justify-content: center}
+h3 {font-style: bold; font-size: 40px; color: #4C6D4C}
+p {align-content: center}
+.skill-text {margin-top: 20px;
+}
